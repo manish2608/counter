@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>docu</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(169, 231, 231);
+        }
+        
+        button {
+            width: 130px;
+            height: 40px;
+            border-radius: 30%;
+            box-shadow: 10px 10px 10px rgb(20, 20, 20);
+            background-color: aquamarine;
+            font-size: large;
+        }
+        
+        h1,
+        h3 {
+            font-family: cursive;
+        }
+    </style>
+
+
+
+
+    <script>
+        var count = 0;
+
+        function myFunction() {
+
+            count++;
+            document.getElementById("demo2").innerHTML = count + " click!";
+
+        }
+
+        function myFunc() {
+
+            count--;
+            document.getElementById("demo2").innerHTML = count + " click!";
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+    <h1>Click here to increment-Decrement the counter!!</h1>
+    <button onclick="myFunction()">Counter</button>
+    <button onclick="myFunc()">Decrease</button>
+    <h3 id="demo2"></h3>
+
+</body>
+
+</html>
